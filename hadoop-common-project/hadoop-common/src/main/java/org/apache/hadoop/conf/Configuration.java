@@ -1466,7 +1466,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
         for(String n: altNames) {
           if(!n.equals(name)) {
             if(log_enabled) {
-              String msg = "[CTEST][SET-PARAM] " + n + getStackTrace()
+              String msg = "[CTEST][SET-PARAM] " + n + getStackTrace();
               LOG.warn(msg); //CTEST
               System.out.println(msg);
             }
@@ -1482,7 +1482,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
       String altSource = "because " + name + " is deprecated";
       for(String n : names) {
         if(log_enabled) {
-          String msg = "[CTEST][SET-PARAM] " + n + getStackTrace()
+          String msg = "[CTEST][SET-PARAM] " + n + getStackTrace();
           LOG.warn(msg); //CTEST
           System.out.println(msg);
         }
@@ -1620,6 +1620,7 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * @param value <code>int</code> value of the property.
    */
   public void setInt(String name, int value) {
+    System.out.println("setInt");
     set(name, Integer.toString(value));
   }
 
