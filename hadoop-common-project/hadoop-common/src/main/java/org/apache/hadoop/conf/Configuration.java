@@ -816,7 +816,6 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
   /** A new configuration. */
   public Configuration() {
     this(true);
-    System.out.println("new configuration");
   }
 
   /** A new configuration where the behavior of reading from the default 
@@ -827,7 +826,6 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * @param loadDefaults specifies whether to load from the default files
    */
   public Configuration(boolean loadDefaults) {
-    System.out.println("new configuration");
     this.loadDefaults = loadDefaults;
 
     synchronized(Configuration.class) {
@@ -842,7 +840,6 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    */
   @SuppressWarnings("unchecked")
   public Configuration(Configuration other) {
-    System.out.println("new configuration");
     synchronized(other) {
       // Make sure we clone a finalized state
       // Resources like input streams can be processed only once
@@ -1620,7 +1617,6 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
    * @param value <code>int</code> value of the property.
    */
   public void setInt(String name, int value) {
-    System.out.println("setInt");
     set(name, Integer.toString(value));
   }
 
