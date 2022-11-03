@@ -74,6 +74,7 @@ public class DistCp extends Configured implements Tool {
   private static final String PREFIX = "_distcp";
   private static final String WIP_PREFIX = "._WIP_";
   private static final String DISTCP_DEFAULT_XML = "distcp-default.xml";
+  private static final String DISTCP_CTEST_XML = "core-ctest.xml";
   private static final String DISTCP_SITE_XML = "distcp-site.xml";
   static final Random rand = new Random();
 
@@ -109,6 +110,7 @@ public class DistCp extends Configured implements Tool {
     Configuration config = new Configuration(configuration);
     config.addResource(DISTCP_DEFAULT_XML);
     config.addResource(DISTCP_SITE_XML);
+    config.addResource(DISTCP_CTEST_XML);
     setConf(config);
     if (inputOptions != null) {
       this.context = new DistCpContext(inputOptions);
