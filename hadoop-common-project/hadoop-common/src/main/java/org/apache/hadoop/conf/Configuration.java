@@ -1276,6 +1276,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
     }
     LOG.warn("[CTEST][GET-PARAM] " + ctestParam); //CTEST
     System.out.println("[CTEST][GET-PARAM] " + ctestParam); //CTEST
+    LOG.warn("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
+    System.out.println("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
     return result;
   }
 
@@ -1372,6 +1374,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
     }
     LOG.warn("[CTEST][GET-PARAM] " + ctestParam); //CTEST
     System.out.println("[CTEST][GET-PARAM] " + ctestParam); //CTEST
+    LOG.warn("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
+    System.out.println("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
     return result;
   }
 
@@ -1451,6 +1455,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
       String msg = "[CTEST][SET-PARAM] " + name + getStackTrace();
       LOG.warn(msg); //CTEST
       System.out.println(msg);
+      LOG.warn("[MYCTEST][SET-PARAM] " + name + " [Result] "+ value); //CTEST
+      System.out.println("[MYCTEST][SET-PARAM] " + name + " [Result] "+ value); //CTEST
     }
     getOverlay().setProperty(name, value);
     getProps().setProperty(name, value);
@@ -1466,6 +1472,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
               String msg = "[CTEST][SET-PARAM] " + n + getStackTrace();
               LOG.warn(msg); //CTEST
               System.out.println(msg);
+              LOG.warn("[MYCTEST][SET-PARAM] " + n + " [Result] "+ value); //CTEST
+              System.out.println("[MYCTEST][SET-PARAM] " + n + " [Result] "+ value); //CTEST
             }
             getOverlay().setProperty(n, value);
             getProps().setProperty(n, value);
@@ -1482,6 +1490,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
           String msg = "[CTEST][SET-PARAM] " + n + getStackTrace();
           LOG.warn(msg); //CTEST
           System.out.println(msg);
+          LOG.warn("[MYCTEST][SET-PARAM] " + n + " [Result] "+ value); //CTEST
+          System.out.println("[MYCTEST][SET-PARAM] " + n + " [Result] "+ value); //CTEST
         }
         getOverlay().setProperty(n, value);
         getProps().setProperty(n, value);
@@ -1564,6 +1574,8 @@ public class Configuration implements Iterable<Map.Entry<String,String>>,
     }
     LOG.warn("[CTEST][GET-PARAM] " + ctestParam); //CTEST
     System.out.println("[CTEST][GET-PARAM] " + ctestParam); //CTEST
+    LOG.warn("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
+    System.out.println("[MYCTEST][GET-PARAM] " + ctestParam + " [Result] "+ result); //CTEST
     return result;
   }
 
