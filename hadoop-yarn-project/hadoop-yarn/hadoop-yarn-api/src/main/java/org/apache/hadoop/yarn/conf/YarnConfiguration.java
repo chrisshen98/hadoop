@@ -63,7 +63,7 @@ public class YarnConfiguration extends Configuration {
   private static final String YARN_DEFAULT_CONFIGURATION_FILE =
       "yarn-default.xml";
 
-  private static final String YARN_CTEST_CONFIGURATION_FILE = "core-ctest.xml";
+  private static final String YARN_CTEST_CONFIGURATION_FILE = "yarn-common-ctest.xml";
 
   @Private
   public static final String CORE_SITE_CONFIGURATION_FILE = "core-site.xml";

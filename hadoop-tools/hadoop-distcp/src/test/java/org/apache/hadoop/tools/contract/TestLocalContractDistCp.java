@@ -31,6 +31,7 @@ public class TestLocalContractDistCp extends AbstractContractDistCpTest {
 
   @Override
   protected AbstractFSContract createContract(Configuration conf) {
+    System.out.println("[myctest config:] " + conf.toString());
     return new LocalFSContract(conf);
   }
 }

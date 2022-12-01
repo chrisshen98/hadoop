@@ -48,6 +48,7 @@ public class TestResourcePBImpl {
 
     String resourceTypesFile = "resource-types-5.xml";
     Configuration conf = new YarnConfiguration();
+    System.out.println(conf.toString());
     TestResourceUtils.setupResourceTypes(conf, resourceTypesFile);
   }
 
