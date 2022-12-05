@@ -472,6 +472,7 @@ public class DistCp extends Configured implements Tool {
     Configuration config = new Configuration();
     config.addResource(DISTCP_DEFAULT_XML);
     config.addResource(DISTCP_SITE_XML);
+    config.addResource(DISTCP_CTEST_XML);
     return config;
   }
 
